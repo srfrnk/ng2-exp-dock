@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "api",
+      "script": "./bin/www",
+      "watch": [
+        "/app"
+      ],
+      "watch_options": {
+        "usePolling": false
+      },
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
