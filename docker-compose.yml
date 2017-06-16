@@ -1,0 +1,14 @@
+version: '3'
+services:
+  client:
+    build: client
+    ports:
+     - "80:80"
+    volumes:
+     - ./client:/app
+  api:
+    build: api
+    ports:
+     - "8080:3000"
+    volumes:
+     - ./api:/app
