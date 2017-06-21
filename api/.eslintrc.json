@@ -1,0 +1,38 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-const-assign": "error",
+        "no-this-before-super": "warn",
+        "no-undef": "error",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "semi":"error",
+        "arrow-body-style":"error",
+        "arrow-parens":"error",
+        "arrow-spacing":"error",
+        "block-scoped-var":"error",
+        "camelcase":"error",
+        "capitalized-comments":"warn",
+        "comma-spacing":"warn",
+        "default-case":"error",
+        "dot-location":["error","property"],
+        "eol-last":"error",
+        "eqeqeq":"error",
+        "indent":"error",
+        "linebreak-style":"error",
+        "max-len":["error",150]
+    }
+}
