@@ -15,4 +15,4 @@ up-prod:
 	docker-compose -f docker-compose.prod.yml up
 
 down:
-	docker-compose kill
+	docker-compose -f docker-compose.prod.yml -f docker-compose.dev.yml kill
