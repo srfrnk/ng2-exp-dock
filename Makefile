@@ -9,4 +9,3 @@ up:
 	
 down:
 	docker-compose kill
-

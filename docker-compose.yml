@@ -6,6 +6,9 @@ services:
      - "80:80"
     volumes:
      - ./client:/app
+    environment: 
+     - API_HOST=localhost
+     - API_PORT=8080
   api:
     build: api
     ports:
