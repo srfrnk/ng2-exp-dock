@@ -4,8 +4,6 @@ services:
     build: client
     ports:
      - "80:80"
-    volumes:
-     - ./client:/app
     environment: 
      - API_HOST=localhost
      - API_PORT=8080
@@ -13,5 +11,3 @@ services:
     build: api
     ports:
      - "8080:3000"
-    volumes:
-     - ./api:/app
