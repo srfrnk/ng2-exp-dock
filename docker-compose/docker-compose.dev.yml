@@ -1,0 +1,8 @@
+version: '2'
+services:
+  client:
+    volumes:
+     - ../client:/app
+  api:
+    volumes:
+     - ../api:/app

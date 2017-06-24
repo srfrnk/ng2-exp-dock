@@ -1,0 +1,20 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "api"
+    },
+    "spec": {
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 8080,
+                "targetPort": 3000
+            }
+        ],
+        "selector": {
+            "name": "api"
+        },
+        "type": "LoadBalancer"
+    }
+}
