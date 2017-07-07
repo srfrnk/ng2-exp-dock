@@ -10,3 +10,4 @@ WORKDIR app
 CMD ["npm","start"]
 
 EXPOSE 80
+
