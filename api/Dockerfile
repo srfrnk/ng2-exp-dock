@@ -12,3 +12,4 @@ WORKDIR app
 CMD ["npm","start"]
 
 EXPOSE 3000
+EXPOSE 7000

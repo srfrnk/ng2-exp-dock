@@ -3,6 +3,9 @@
     {
       "name": "api",
       "script": "./bin/www",
+      "node_args": [
+        "--inspect=0.0.0.0:7000"
+      ],
       "watch": [
         "/app"
       ],
