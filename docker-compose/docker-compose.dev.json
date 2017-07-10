@@ -1,0 +1,19 @@
+{
+  "version": "2",
+  "services": {
+    "client": {
+      "volumes": [
+        "../client:/app"
+      ]
+    },
+    "api": {
+      "volumes": [
+        "../api:/app"
+      ],
+      "ports": [
+        "8080:3000",
+        "7000:7000"
+      ]
+    }
+  }
+}

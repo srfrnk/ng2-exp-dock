@@ -6,16 +6,16 @@ setup:
 	cd client && npm i
 	
 build:
-	docker-compose -f docker-compose/docker-compose.prod.yml -f docker-compose/docker-compose.dev.yml build
+	docker-compose -f docker-compose/docker-compose.prod.json -f docker-compose/docker-compose.dev.json build
 
 up:
-	docker-compose -f docker-compose/docker-compose.prod.yml -f docker-compose/docker-compose.dev.yml up
+	docker-compose -f docker-compose/docker-compose.prod.json -f docker-compose/docker-compose.dev.json up
 
-up-prod:
-	docker-compose -f docker-compose/docker-compose.prod.yml up
+up-no-dev:
+	docker-compose -f docker-compose/docker-compose.prod.json up
 	
 down:
-	docker-compose -f docker-compose/docker-compose.prod.yml -f docker-compose/docker-compose.dev.yml kill
+	docker-compose -f docker-compose/docker-compose.prod.json -f docker-compose/docker-compose.dev.json kill
 
 test:
 	cd client && npm test
